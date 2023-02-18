@@ -20,3 +20,8 @@ end
     </p>
     <%= form.submit %>
     <% end %>
+
+    def create
+        redirect_to "/posts"
+    end
+    
