@@ -1,3 +1,11 @@
-<% places = Place.all%>
-<h1> Places I've Been </h1>
-<a href="/posts">New Post</a>
+<h1>Places I've Been</h1>
+ 
+ <ul>
+   <% for place in @places %>
+    <li>
+      <a href="/places/<%= place["id"] %>"><%= place["name"] %></a>
+    </li>
+   <% end %>
+</ul>
+
+<p><a href="/places/new">New Post</a></p>
