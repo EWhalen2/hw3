@@ -6,7 +6,7 @@ class PostsController < ApplicationController
       def new
         @post = Post.new
         @place = Place.find_by({ "id" => params["id"]})
-        @post["place_id"] = @place["id"]
+       # @post["place_id"] = @place["id"]
       end
     
       def create
