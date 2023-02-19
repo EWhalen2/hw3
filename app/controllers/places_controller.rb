@@ -5,7 +5,6 @@ class PlacesController < ApplicationController
     
       def show
         @place = Place.find_by({ "id" => params["id"] })
-        @place = Place.where({ "place_id" => @place["name"] })
       end
     
       def new
@@ -19,3 +18,4 @@ class PlacesController < ApplicationController
         redirect_to "/places"
       end
 end
+##  @place = Place.where({ "place_id" => @place["name"] })
