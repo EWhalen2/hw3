@@ -1,9 +1,7 @@
-<div class="row">
-  <% for post in @posts %>
-    <div class="col-3">
-      <h4><%= post["author"] %></h4>
-      <img class="img-fluid" src="<%= post["image"] %>" class="w-full">
-      <p><%= post["body"] %></p>
-    </div>
-  <% end %>
-</div>
+<h1><%= @post["title"] %> </h1>
+
+<h2> <%= @post["description"] %></h2>
+
+<h3> <%= @post["posted_on"]%> </h3>
+
+<p><a href="/places/<%= @place["id"] %>">Back to <%= @place["place_id"] %></a></p>
