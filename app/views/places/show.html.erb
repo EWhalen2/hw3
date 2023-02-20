@@ -3,16 +3,18 @@
 <a href="/posts/new?place_id=<%=@place["id"]%>">New Post</a>
 </p>
 
+<p>
 <ul>
     <% for post in @posts %>
     <li>
-        <%= post["title"] %>
-        <%= post["description"]%>
+        <%= post["title"] %>,
+        <%= post["description"]%>,
         <%= post["posted_on"]%>
     </li>
-    <%end%>
-    
+    <% end %>
     </ul>
+</p>
+
     <p>
         <a href="/places"> Back to all places </a>
     </p>
